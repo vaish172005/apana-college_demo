@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-image img {
+            width: 100%;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-content h2 {
+            margin-bottom: 10px;
+            font-size: 1.8em;
+            font-family: 'Bradley Hand ITC', cursive; /* Apply the Bradley Hand ITC font */
+        }
+
+        .card-content p {
+            font-size: 1em;
+            color: #555;
+            font-family: 'Bradley Hand ITC', cursive; /* Apply the Bradley Hand ITC font */
+        }
+
+        /* Media Query for responsiveness */
+        @media (min-width: 768px) {
+            .card {
+                flex-direction: row;
+            }
+
+            .card-image {
+                width: 50%;
+            }
+
+            .card-content {
+                width: 50%;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVRrXDVMY1PzRkcrgfrJK4IdAayxgVSc8-mQ&s" alt="Himalayan Resort">
+        </div>
+        <div class="card-content">
+            <h2>Hey... Welcome to</h2>
+            <h2>Himalayan Resort</h2>
+        </div>
+    </div>
+</body>
+</html>
